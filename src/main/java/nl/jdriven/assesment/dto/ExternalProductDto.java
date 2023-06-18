@@ -19,6 +19,16 @@ public class ExternalProductDto {
     private BigDecimal price;
     private String description;
 
+    public ExternalProductDto() {
+    }
+
+    public ExternalProductDto(Long id, String title, BigDecimal price, String description) {
+        this.id = id;
+        this.title = title;
+        this.price = price;
+        this.description = description;
+    }
+
     public Long getId() {
         return id;
     }
